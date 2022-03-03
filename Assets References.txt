@@ -1,0 +1,7 @@
+Car: Marcos Schultz, 2019. MS Sports Car [online]. Available at: https://assetstore.unity.com/packages/3d/vehicles/ms-sports-car-145412 [Accessed 11 Jun. 2020].
+Car controller: Marcos Schultz, 2018. MS Vehicle System (free version) [online]. Available at: https://assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214 [Accessed 11 Jun. 2020].
+Regular sign: studiomf, 2015. Traffic Signs 01 [online]. Available at: https://www.turbosquid.com/3d-models/free-traffic-signs-3d-model/910452 [Accessed 11 Jun. 2020].
+Road blocker: Rakshi Games, 2015. Road Blocker [online]. Available at: https://assetstore.unity.com/packages/3d/props/exterior/road-blocker-663 [Accessed 11 Jun. 2020].
+RoadKit: Blacklight, 2015. Simple Modular Road Kit [online]. Available at: https://assetstore.unity.com/packages/3d/environments/roadways/simple-modular-road-kit-66152 [Accessed 11 Jun. 2020].
+Stop sign: Fendal3d, 2014. Stop sign [online]. Available at: https://www.turbosquid.com/3d-models/free-max-model-stop-road-sign/1122694 [Accessed 11 Jun. 2020].
+Street road: pablobertu, 2019. Street Road [online]. Available at: https://free3d.com/3d-model/street-estrada-971348.html [Accessed 11 Jun. 2020].
