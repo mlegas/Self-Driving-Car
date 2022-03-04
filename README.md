@@ -35,7 +35,7 @@ Provided below is a list of what steps were taken during the development of this
     * Since the model has no further use, it has not been attached to this project.
     * However, the Python files used for training and the creation of TFRecords files can be found in the `/SSD MobileNet Attempt/Used Python Code/` directory.
 9. Due to this, I decided to use an already existing object detection model trained on the GTSDB dataset from [helloyide](https://github.com/helloyide/real-time-German-traffic-sign-recognition).
-10. As Unity ML-Agents at the time of the creation of this project did not support using advanced models outside of Unity, 4 Unity gym environments were built, each with a rising difficulty level, to train the same model on each of these environments. This would facilitate the use of transfer learning fully.
+10. As Unity ML-Agents at the time of the creation of this project did not support using advanced neural network models inside the Unity editor, 4 Unity gym environments were built, each with a rising difficulty level, to train the same model on each of these gym environments using a Python script. This would fully facilitate the use of transfer learning.
     * These environments can be found in the `/Built Unity Environments/` directory.
 12. PPO2 and object detection scripts were being prepared to be used on these gym environments.
     * These scripts can be found in the `/Used Python Code/` directory.
