@@ -39,6 +39,7 @@ Here I list what steps were taken during the development of this project, in ord
     * These environments can be found in the `/Built Unity Environments/` directory.
 12. PPO2 and object detection scripts were being prepared to be used on these gym environments.
     * These scripts can be found in the `/Used Python Code/` directory.
+    * However, it's important to note they have not been fully implemented and tested with the built Unity environments.
 14. Project progress stopped.
 
 ## Documentation
