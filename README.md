@@ -30,7 +30,7 @@ Here I list what steps were taken during the development of this project, in ord
 5. These screenshots were further annotated and added to a copy of the GTSDB dataset.
     * The dataset can be found in the `/SSD MobileNet Attempt/Full GTSDB Dataset + Unity Images (PNG)/` directory.
 7. TFRecords files were created for [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) a SSD Mobilenet V2 from the [TensorFlow Detection Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md) with this dataset for it to be used further in the project.
-    * Due to the size of the TFRecords files, they have been moved to an external file provider. The links can be found in the `TFRecords.txt` file in the `/SSD MobileNet Attempt/` directory.
+    * Due to the size of the TFRecords files, they have been moved to an external file provider. The links can be found in the `README.md` file in the `/SSD MobileNet Attempt/` directory.
 8. A SSD Mobilenet V2 model was trained, unfortunately with 0% accuracy - this is possibly due to the size of the images that were later convoluted to a 320x240 image, and therefore unreadable for the CNN model.
     * Since the model has no further use, it has not been attached to this project.
     * However, the Python files used for training and the creation of TFRecords files can be found in the `/SSD MobileNet Attempt/Used Python Code/` directory.
