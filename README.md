@@ -11,7 +11,7 @@ Here I list what steps were taken during the development of this project, in ord
 
 1. A player [car controller script](https://assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214) has been modified so that the RL agent could handle the inputs by itself.
 2. A RL model was trained on a scene consisting of 6 agents driving on a straight lane, using a number of [raycasts](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) for observing the road around them. Unity ML-Agents's internal implementation of [PPO](https://openai.com/blog/openai-baselines-ppo/) was used to train the agents.
-    * The car controller script, straight lane scene and trained model are all available in the `UnityProject/Self-DrivingCar/` directory.
+    * The car controller script, straight lane scene and trained model are all available in the `/UnityProject/Self-DrivingCar/` directory.
 3. A number of chosen German traffic signs have been textured for the traffic sign detection part, namely:
     * speed_limit_20
     * speed_limit_30
@@ -28,17 +28,17 @@ Here I list what steps were taken during the development of this project, in ord
     * go_straight
 4. 127 screenshots were made in Unity consisting of the traffic signs in an Unity scene.
 5. These screenshots were further annotated and added to a copy of the GTSDB dataset.
-    * The dataset can be found in the `SSD MobileNet Attempt/Full GTSDB Dataset + Unity Images (PNG)/` directory.
+    * The dataset can be found in the `/SSD MobileNet Attempt/Full GTSDB Dataset + Unity Images (PNG)/` directory.
 7. TFRecords files were created for [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) a SSD Mobilenet V2 from the [TensorFlow Detection Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md) with this dataset for it to be used further in the project.
-    * Due to the size of the TFRecords files, they have been moved to an external file provider. The links can be found in the `SSD MobileNet Attempt/` directory.
+    * Due to the size of the TFRecords files, they have been moved to an external file provider. The links can be found in the `TFRecords.txt` file in the `/SSD MobileNet Attempt/` directory.
 8. A SSD Mobilenet V2 model was trained, unfortunately with 0% accuracy - this is possibly due to the size of the images that were later convoluted to a 320x240 image, and therefore unreadable for the CNN model.
     * Since the model has no further use, it has not been attached to this project.
-    * However, the Python files used for training and the creation of TFRecords files can be found in the `SSD MobileNet Attempt/Used Python Code/` directory.
+    * However, the Python files used for training and the creation of TFRecords files can be found in the `/SSD MobileNet Attempt/Used Python Code/` directory.
 9. Due to this, I decided to use an already existing object detection model trained on the GTSDB dataset from [helloyide](https://github.com/helloyide/real-time-German-traffic-sign-recognition).
 10. As Unity ML-Agents at the time of the creation of this project did not support using advanced models outside of Unity, 4 Unity gym environments were built, each with a rising difficulty level, to train the same model on each of these environments. This would facilitate the use of transfer learning fully.
-    * These environments can be found in the `Built Unity Environments/` directory.
+    * These environments can be found in the `/Built Unity Environments/` directory.
 12. PPO2 and object detection scripts were being prepared to be used on these gym environments.
-    * These scripts can be found in the `Used Python Code/` directory.
+    * These scripts can be found in the `/Used Python Code/` directory.
 14. Project progress stopped.
 
 ## Documentation
