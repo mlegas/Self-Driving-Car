@@ -7,7 +7,7 @@ However, due to the outbreak of the COVID-19 pandemic in March 2020, access to s
 
 ## Project steps
 
-Here I list what steps were taken during the development of this project, in order to explain the contents of each folder.
+Provided below is a list of what steps were taken during the development of this project, in order to explain the contents of each folder of the repository.
 
 1. A player [car controller script](https://assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214) has been modified so that the RL agent could handle the inputs by itself.
 2. A RL model was trained on a scene consisting of 6 agents driving on a straight lane, using a number of [raycasts](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) for observing the road around them. Unity ML-Agents's internal implementation of [PPO](https://openai.com/blog/openai-baselines-ppo/) was used to train the agents.
