@@ -34,7 +34,7 @@ Provided below is a list of what steps were taken during the development of this
 8. A SSD Mobilenet V2 model was trained, unfortunately with 0% accuracy - this is possibly due to the size of the images that were later convoluted to a 320x240 image, and therefore unreadable for the CNN model.
     * Since the model has no further use, it has not been attached to this project.
     * However, the Python files used for training and the creation of TFRecords files can be found in the `/SSD MobileNet Attempt/Used Python Code/` directory.
-9. Due to this, I decided to use an already existing object detection model trained on the GTSDB dataset from [helloyide](https://github.com/helloyide/real-time-German-traffic-sign-recognition).
+9. Due to this, I decided to use an already existing object detection model trained on the GTSDB dataset from [helloyide](https://github.com/helloyide/real-time-German-traffic-sign-recognition). The model was firstly tested on the Unity screenshots of textured signs in the dataset and managed to detect most of them correctly. 
 10. As Unity ML-Agents at the time of the creation of this project did not support using advanced neural network models inside the Unity editor, 4 Unity gym environments were built, each with a rising difficulty level, to train the same model on each of these gym environments using a Python script. This would fully facilitate the use of transfer learning.
     * These environments can be found in the `/Built Unity Environments/` directory.
 12. PPO2 and object detection scripts were being prepared to be used on these gym environments.
